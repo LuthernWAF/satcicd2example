@@ -42,7 +42,7 @@ jobs:
     - name: Terraform Init
       run: terraform init
       env:
-        GOOGLE_CREDENTIALS: ${{ secrets.GCP_KEY_SAT2 }} 
+       GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GCP_KEY_SAT2 }} 
 
 
     # Generates an execution plan for Terraform
